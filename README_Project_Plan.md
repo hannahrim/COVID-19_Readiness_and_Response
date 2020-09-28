@@ -6,7 +6,7 @@ Group Project – Team 4
 
 # Overview:
 
-Health systems in de#veloping countries As the global pandemic of COVID19 continues to rage around the world, countries need mechanisms to prioritize resources for infection prevention and control.  Health facilities need guidance and materials, such as disinfectant and personal protective equipment (PPE) to help prevent infections within their facilities were infected individuals congregate seeking treatment.  But public health resources are insufficient to blanket the system with resources, and this would in any case be inefficient since some facilities already have sufficient capacity to prevent infection.  
+Health systems in developing countries As the global pandemic of COVID19 continues to rage around the world, countries need mechanisms to prioritize resources for infection prevention and control.  Health facilities need guidance and materials, such as disinfectant and personal protective equipment (PPE) to help prevent infections within their facilities were infected individuals congregate seeking treatment.  But public health resources are insufficient to blanket the system with resources, and this would in any case be inefficient since some facilities already have sufficient capacity to prevent infection.  
 
 Team 4 proposes the development of a predictive model using machine learning to identify health facilities (or the districts in which they are located) in selected developing countries most in need of capacity building for infection prevention and control.  If such a model could accurately predict which facilities and/or districts are most in need, the savings in time and resources would be substantial, and free up resources for other program areas and diseases.
 
@@ -14,12 +14,12 @@ Team 4 proposes the development of a predictive model using machine learning to 
 For over 30 years, the United States Agency for International Development (USAID) has supported the Demographic and Health Surveys Program (DHS Program). The DHS Program provides technical assistance and funding for the implementation of more than 320 household and facility-based surveys in 90 countries across Africa, Asia, Latin America/Caribbean and Eastern Europe.  Two of these surveys, the Service Provision Assessment (SPA), a health facility assessment to measure service availability and readiness, and the Demographic and Health Survey (DHS), a population-based survey to measure social, demographic, and health status characteristics of populations, would serve the needs of our predictive model. 
 
 In the SPA, health facility service readiness includes elements of infection control and prevention.  For instance, the survey measures whether a health facility has 
-•	a continuous source of clean water, 
-•	effective mechanisms for medical waste disposal, 
-•	PPE (e.g. masks, gowns, eye protection, sterile gloves, etc.),
-•	disinfectant,
-•	guidelines for infection control,
-•	others.
+- a continuous source of clean water, 
+- effective mechanisms for medical waste disposal, 
+- PPE (e.g. masks, gowns, eye protection, sterile gloves, etc.),
+- disinfectant,
+- guidelines for infection control,
+- others.
 
 An index of readiness to prevent and control infection can be calculated from the above indicators and a threshold value for readiness established whereby facilities can be grouped as ready, or not, to provide services safely during the pandemic.   Other variables of interest to help predict readiness are also available in the SPA, such as facility type (e.g. hospital, health center, health post), number of beds (a measure of capacity, or size), number of health care workers present, etc.
 
@@ -37,11 +37,13 @@ We will use JavaScript D3 to create graphics (bar charts) to show differences be
 We will use a machine learning classification model to classify health facilities and districts as either ready to provide health services safely (i.e. adequate readiness for infection control and prevention), or not ready.  We will use python with the sklearn, numpy, pandas, scipy modules.
 
 # Project Management & Communications
-Our team will be communicating through Slack and Email. The team will utilize Asana as a project management tool to manage and track the team's project. The PM will check in with each team member and schedule one-on-ones to ensure deliverables are completed on time. We have and will use Zoom for team meetings.
+We have created a GitHub repository (COVID Readiness & Response) with branches for project management, database management,  dashboards and visualizations, and Analysis (machine learning).  We also have set up a project communication platform in Asana. 
 
-
-
-
+# Roles 
+- Project Management : Hannah Lim 
+- Machine Learning : David Boone, Jueun Lee
+- Dashboard : Ramesh Azaria
+- Database : Shanice Brown 
 
 
 
