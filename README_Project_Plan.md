@@ -40,7 +40,7 @@ We will use a machine learning classification model to classify health facilitie
 We have created a GitHub repository (COVID Readiness & Response) with branches for project management, database management,  dashboards and visualizations, and Analysis (machine learning).  We also have set up a project communication platform in Asana. 
 
 # Roles 
-- Project Management : Hannah Lim 
+- Project Management : Hannah Rim 
 - Machine Learning : David Boone, Jueun Lee
 - Dashboard : Ramesh Azaria
 - Database : Shanice Brown 
