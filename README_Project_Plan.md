@@ -44,7 +44,7 @@ We have created a GitHub repository (COVID Readiness & Response) with branches f
 # Roles 
 - Project Management : Hannah Rim 
 - Machine Learning : David Boone, Jueun Lee
-- Dashboard : Ramesh Azaria
+- Dashboard : Ramesh Azariah
 - Database : Jueun Lee, Shanice Brown 
 
 
