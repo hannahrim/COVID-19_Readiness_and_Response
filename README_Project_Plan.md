@@ -18,7 +18,7 @@ In the SPA, health facility service readiness includes elements of infection con
 - effective mechanisms for medical waste disposal, 
 - PPE (e.g. masks, gowns, eye protection, sterile gloves, etc.),
 - disinfectant,
-- guidelines for infection control,
+- guidelines for infection control
 - others.
 
 An index of readiness to prevent and control infection can be calculated from the above indicators and a threshold value for readiness established whereby facilities can be grouped as ready, or not, to provide services safely during the pandemic.   Other variables of interest to help predict readiness are also available in the SPA, such as facility type (e.g. hospital, health center, health post), number of beds (a measure of capacity, or size), number of health care workers present, etc.
@@ -29,12 +29,14 @@ We will start with data from one country, and if the results are promising we ca
 
 # Data Management
 The data are available in many formats (CSV, JSON, geoJSON, XML, to name a few), and also via Application Program Interface (API).  We will acquire the data and load it into a PostgreSQL database at Amazon RDS.
+[Sample data](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/sampleData.csv)
 
 # Dashboard
 We will use JavaScript D3 to create graphics (bar charts) to show differences between geographic areas for different predictors.  We will use Flask to show a map of readiness for infection control within the country.
 
 # Model (Data Analysis)
 We will use a machine learning classification model to classify health facilities and districts as either ready to provide health services safely (i.e. adequate readiness for infection control and prevention), or not ready.  We will use python with the sklearn, numpy, pandas, scipy modules.
+[Draft Model](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/DraftModel.ipynb)
 
 # Project Management & Communications
 We have created a GitHub repository (COVID Readiness & Response) with branches for project management, database management,  dashboards and visualizations, and Analysis (machine learning).  We also have set up a project communication platform in Asana. 
@@ -43,7 +45,9 @@ We have created a GitHub repository (COVID Readiness & Response) with branches f
 - Project Management : Hannah Rim 
 - Machine Learning : David Boone, Jueun Lee
 - Dashboard : Ramesh Azaria
-- Database : Shanice Brown 
+- Database : Jueun Lee, Shanice Brown 
+
+# Sample data set and draft model 
 
 
 
