@@ -37,7 +37,9 @@ We will use JavaScript D3 to create graphics (bar charts) to show differences be
 We will use a machine learning classification model to classify health facilities and districts as either ready to provide health services safely (i.e. adequate readiness for infection control and prevention), or not ready.  We will use python with the sklearn, numpy, pandas, scipy modules.
 
 # Project Management & Communications
-We have created a GitHub repository (COVID Readiness & Response) with branches for project management, database management,  dashboards and visualizations, and Analysis (machine learning).  We also have set up a project communication platform in Asana. 
+Our team will be communicating through Slack and Email. The team will utilize Asana as a project management tool to manage and track the team's project. The PM will check in with each team member and schedule one-on-ones to ensure deliverables are completed on time. We have and will use Zoom for team meetings.
+
+
 
 
 
