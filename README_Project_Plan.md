@@ -47,10 +47,6 @@ We have created a GitHub repository (COVID Readiness & Response) with branches f
 - Dashboard : Ramesh Azaria
 - Database : Jueun Lee, Shanice Brown 
 
-# Sample data set and draft model 
-
-
-
 
 
 	
