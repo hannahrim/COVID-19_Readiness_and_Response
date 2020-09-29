@@ -32,7 +32,7 @@ The data are available in many formats (CSV, JSON, geoJSON, XML, to name a few),
 [Sample data](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/sampleData.csv)
 
 # Dashboard
-We will use JavaScript D3 to create graphics (bar charts) to show differences between geographic areas for different predictors.  We will use Flask to show a map of readiness for infection control within the country.
+We will use Tableau to create graphics (bar charts) to show differences between geographic areas for different predictors.  We will use Flask to show a map of readiness for infection control within the country.
 
 # Model (Data Analysis)
 We will use a machine learning classification model to classify health facilities and districts as either ready to provide health services safely (i.e. adequate readiness for infection control and prevention), or not ready.  We will use python with the sklearn, numpy, pandas, scipy modules.
