@@ -25,3 +25,38 @@ CREATE TABLE combined_preparedness (
     LONGNUM FLOAT,
 	PRIMARY KEY (FACIL)
 );
+
+CREATE TABLE combined_preparedness (
+    FACIL INT,
+    Country	VARCHAR,
+    REGION VARCHAR,
+    Zone VARCHAR,
+    FACTYPE	INT,
+    MGA	INT,
+    FTYPE INT,
+    Factype2 INT,	
+    ownership INT,
+    water_source BOOLEAN,	
+    soapwater BOOLEAN, 
+    st_precautions BOOLEAN,	
+    preparedness FLOAT,
+    prep2 BOOLEAN,
+    TBservice BOOLEAN,
+    HIVcare BOOLEAN,
+    meetings BOOLEAN,
+    quality BOOLEAN,
+    inpatient BOOLEAN,
+    numberbeds INT,
+    total_full INT,
+    outpatients INT,
+	PRIMARY KEY (FACIL)
+);
+CREATE TABLE gps (
+    FACIL INT,
+    Country	VARCHAR,
+	REGION_code INT,
+    REGION_name VARCHAR,
+	LATNUM FLOAT,
+	LONGNUM FLOAT,
+	PRIMARY KEY (FACIL)
+);
