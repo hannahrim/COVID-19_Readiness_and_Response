@@ -11,7 +11,7 @@ CREATE TABLE combined_preparedness (
     water_source BOOLEAN,	
     soapwater BOOLEAN, 
     st_precautions BOOLEAN,	
-    preparedness INT,
+    preparedness FLOAT,
     prep2 BOOLEAN,
     TBservice BOOLEAN,
     HIVcare BOOLEAN,
@@ -21,7 +21,7 @@ CREATE TABLE combined_preparedness (
     numberbeds INT,
     total_full INT,
     outpatients INT,
-    LATNUM INT,
-    LONGNUM INT,
+    LATNUM FLOAT,
+    LONGNUM FLOAT,
 	PRIMARY KEY (FACIL)
 );
