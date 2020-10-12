@@ -4,6 +4,9 @@ Project Plan:  COVID Readiness & Response
 UC Berkeley Data Analysis Boot Camp
 Group Project – Team 4
 
+# Presentation for this project 
+https://docs.google.com/presentation/d/1lAy8StLDQWyf62V-8jowSlDHaiTOXzar5aKAlyttHUI/edit?usp=sharing
+
 # Overview:
 
 As the global pandemic of COVID19 continues to rage around the world, health systems in developing countries need mechanisms to prioritize resources for infection prevention and control.  Health facilities need guidance and materials, such as disinfectant and personal protective equipment (PPE), to help prevent infections within their facilities where potentially infected individuals congregate seeking treatment for COVID and other diseases.  But public health resources are insufficient to blanket the system with resources, and this would in any case be inefficient since some facilities already have sufficient capacity to prevent infection.  
