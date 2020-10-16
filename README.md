@@ -4,6 +4,9 @@ Project Plan:  COVID Readiness & Response
 UC Berkeley Data Analysis Boot Camp
 Group Project – Team 4
 
+# Presentation for this project 
+https://docs.google.com/presentation/d/1lAy8StLDQWyf62V-8jowSlDHaiTOXzar5aKAlyttHUI/edit?usp=sharing
+
 # Overview:
 
 As the global pandemic of COVID19 continues to rage around the world, health systems in developing countries need mechanisms to prioritize resources for infection prevention and control.  Health facilities need guidance and materials, such as disinfectant and personal protective equipment (PPE), to help prevent infections within their facilities where potentially infected individuals congregate seeking treatment for COVID and other diseases.  But public health resources are insufficient to blanket the system with resources, and this would in any case be inefficient since some facilities already have sufficient capacity to prevent infection.  
@@ -32,7 +35,7 @@ The data are available in many formats (CSV, JSON, geoJSON, XML, to name a few),
 [Sample data](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/sampleData.csv)
 
 # Dashboard
-We will use JavaScript D3 to create graphics (bar charts) to show differences between geographic areas for different predictors.  We will use Flask to show a map of readiness for infection control within the country.
+We will use Tableau to create graphics (bar charts) to show differences between geographic areas for different predictors.  We will use Flask to show a map of readiness for infection control within the country.
 
 # Model (Data Analysis)
 We will use a machine learning classification model to classify health facilities and districts as either ready to provide health services safely (i.e. adequate readiness for infection control and prevention), or not ready.  We will use python with the sklearn, numpy, pandas, scipy modules.
