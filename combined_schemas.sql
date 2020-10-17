@@ -1,4 +1,4 @@
-CREATE TABLE combined_preparedness (
+CREATE TABLE combined_spa (
     FACIL INT,
     Country	VARCHAR,
     REGION VARCHAR,
@@ -8,16 +8,16 @@ CREATE TABLE combined_preparedness (
     FTYPE INT,
     Factype2 INT,	
     ownership INT,
-    water_source BOOLEAN,	
-    soapwater BOOLEAN, 
-    st_precautions BOOLEAN,	
+    water_source INT,	
+    soapwater INT, 
+    st_precautions INT,	
     preparedness FLOAT,
-    prep2 BOOLEAN,
-    TBservice BOOLEAN,
-    HIVcare BOOLEAN,
-    meetings BOOLEAN,
-    quality BOOLEAN,
-    inpatient BOOLEAN,
+    prep2 INT,
+    TBservice INT,
+    HIVcare INT,
+    meetings INT,
+    quality INT,
+    inpatient INT,
     numberbeds INT,
     total_full INT,
     outpatients INT,
@@ -73,7 +73,7 @@ SELECT pr.FACIL,
     co.Cumulative_cases,
     co.Cumulative_deaths
 INTO combined_full_data
-FROM combined_preparedness as pr
+FROM combined_gps as pr
 INNER JOIN gps as gps
 ON (pr.FACIL = gps.FACIL)
 LEFT JOIN covid_cases_global as co
