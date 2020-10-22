@@ -1,4 +1,4 @@
-CREATE TABLE combined_spa (
+CREATE TABLE combined_preparedness (
     FACIL INT,
     Country	VARCHAR,
     REGION VARCHAR,
@@ -46,6 +46,24 @@ CREATE TABLE covid_cases_global (
 	PRIMARY KEY (Country,Date_reported)
 );
 
+CREATE TABLE indicators (
+    FACIL INT,	
+    water_source INT,	
+    sterilization INT,	
+    equip_hld INT,	
+    guidelines_HLD INT,	
+    disinfectant INT,	
+    soapwater INT,	
+    st_precautions INT,	
+    latexgloves INT,	
+    medicalmasks INT,	
+    gowns INT,	
+    eye_protect INT,	
+    numberbeds INT,
+    preparedness INT,
+    PRIMARY KEY (FACIL)
+);
+
 SELECT pr.FACIL,
     pr.Country,
     pr.REGION,
@@ -61,7 +79,13 @@ SELECT pr.FACIL,
     pr.ownership,
     pr.water_source,	
     pr.soapwater, 
-    pr.st_precautions,	
+    pr.st_precautions,
+    ind.disinfectant,
+    ind.latexgloves,
+    ind.medicalmasks,
+    ind.gowns,
+    ind.eye_protect,
+    ind.preparedness	
     pr.TBservice,
     pr.HIVcare,
     pr.meetings,
@@ -73,9 +97,11 @@ SELECT pr.FACIL,
     co.Cumulative_cases,
     co.Cumulative_deaths
 INTO combined_full_data
-FROM combined_gps as pr
+FROM combined_preparedness as pr
 INNER JOIN gps as gps
 ON (pr.FACIL = gps.FACIL)
+INNER JOIN indicators as ind
+ON (pr.FACIL = id.FACIL)
 LEFT JOIN covid_cases_global as co
 ON (pr.Country = co.Country_code)
 WHERE (co.Date_reported = '10/11/2020');
