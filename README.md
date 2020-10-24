@@ -40,6 +40,15 @@ We will use Tableau to create graphics (bar charts) to show differences between 
 # Model (Data Analysis)
 We used a supervised machine learning classification model to classify health facilities and districts as either ready to provide health services safely (i. used adequate readiness for infection control and prevention), or not ready.  We used python with the sklearn, numpy, pandas, scipy modules to explore the accuracy, precision and recall of predictions from several approaches;  Logistic regression, Support Vector Models (SVM), Decision Trees, and Gradient Boosted Tree.  We ran into problems of convergence and needed to scale the data using the "tandardScaler from sklearn.preprocessing.  After scaling the the outcome variable we had to convert the data type from float to integer in order to run the model successfully.  We had a very small minority class (i.e. facility is prepared) and needed to oversample to boost the ability to make predictions.  We tried random and SMOTE for oversampling, and SMOTEENN for combination sampling, though there was no appreciable difference in performance among the different methods. We varied predictors to find the optimum set which provided the highest predictive value.
 
+## Predicators:
+
+![Final Predictors](final-predicators.jpg)
+
+
+
+## Final Results
+
+![Final Results](final-results.jpg)
 
 
 [Draft Model](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/DraftModel.ipynb)
