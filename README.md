@@ -43,19 +43,24 @@ We will use Tableau to create graphics (bar charts) to show differences between 
 # Model (Data Analysis)
 We used a supervised machine learning classification model to classify health facilities and districts as either ready to provide health services safely (i. used adequate readiness for infection control and prevention), or not ready.  We used python with the sklearn, numpy, pandas, scipy modules to explore the accuracy, precision and recall of predictions from several approaches;  Logistic regression, Support Vector Models (SVM), Decision Trees, and Gradient Boosted Tree.  
 
-Data were called from the PostgreSQL database at Amazon RDS using SQLAlchemy and Flask.  We made a dataframe to select out variables for the analysis and removed missing values using DropNa().  
+Data were called from the PostgreSQL database at Amazon RDS using SQLAlchemy and Flask.  We made a dataframe to select out variables for the analysis and removed missing values using DropNa().  We created an outcome variable (prep2) to model preparedness for disease control and prevention by combining the predicators as follows:  if facilities were found to have medical masks, latex gloves, disinfectant, and soap and water available at the site on the day of the assessment they were considered prepared.  If any of these items was not present they were considered unprepared.  About 5% of facilities were judged prepared by this criteria.
 
-We ran into problems of convergence and needed to scale the data using the "tandardScaler from sklearn.preprocessing.  After scaling the the outcome variable we had to convert the data type from float to integer in order to run the model successfully.  We had a very small minority class (i.e. facility is prepared) and needed to oversample to boost the ability to make predictions.  We tried random and SMOTE for oversampling, and SMOTEENN for combination sampling, though there was no appreciable difference in performance among the different methods. We varied predictors to find the optimum set which provided the highest predictive value.
 
-## Predicators:
+Predicators selected for model included:
 
 ![Final Predictors](final-predicators.jpg)
 
 
+Other predicators were also explored.  Numbers of cases and deaths of COVID19 for each country were obtained from the World Health Organization (WHO) website:  (www.who.int).  Theses data were only available at regional level for each country.  
+
+We created classes from the data; we dropped the outcome variable 'prep2' from the dataframe (y) and the remaining variables were labeled X.  We trained the model using from  train_test_split from sklearn.model_selection using the default 75%/25% split.  We ran a logistric regression model using scipy.  
+
+We ran into problems of convergence and needed to scale the data using the "tandardScaler from sklearn.preprocessing.  After scaling the the outcome variable we had to convert the data type from float to integer in order to run the model successfully.  We had a very small minority class (i.e. facility is prepared) and needed to oversample to boost the ability to make predictions.  We tried random and SMOTE for oversampling, and SMOTEENN for combination sampling, though there was no appreciable difference in performance among the different methods. We varied predictors to find the optimum set which provided the highest predictive value.
 
 ## Final Results
 
 ![Final Results](final-results.jpg)
+
 
 
 [Draft Model](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/DraftModel.ipynb)
