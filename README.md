@@ -80,7 +80,10 @@ The best performing (and final) model included the following predicators: countr
 -Explore other ways of defining preparedness.  The facilities labeled as prepared were a small subset of the data (only ~ 5%).  Relaxing the standard for preparedness may make the model more robust at prediction by increasing the number of facilities deemed prepared.  Alternatively, an index was prepared from eleven variables associated with preparedness for infection control.  This continuous outcome variable could be modeled using linear regression.
 
 
-[Draft Model](COVID_Readiness-LogReg_SMOTE.ipynb)
+[Logistic Regression Model](COVID_Readiness-LogReg_SMOTE.ipynb)
+[Support Vector Machines Model](COVID_Readiness-SVM.ipynb)
+[Decision Trees Model](COVID19_decision-trees.ipynb)
+[Gradient Boosted Tree Model](COVID_Prepare_gradient_boosted_tree.ipynb)
 
 # Project Management & Communications
 We have created a GitHub repository (COVID Readiness & Response) with branches for project management, database management,  dashboards and visualizations, and Analysis (machine learning).  We also have set up a project communication platform in Asana. 
