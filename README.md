@@ -55,8 +55,9 @@ Other predicators were also explored.  Numbers of cases and deaths of COVID19 fo
 
 We created classes from the data; we dropped the outcome variable 'prep2' from the dataframe (y) and the remaining variables were labeled X.  We trained the model using from  train_test_split from sklearn.model_selection using the default 75%/25% split.  We ran a logistric regression model using scipy.  
 
-We ran into problems of convergence and needed to scale the data using the "tandardScaler from sklearn.preprocessing.  After scaling the the outcome variable we had to convert the data type from float to integer in order to run the model successfully.  We had a very small minority class (i.e. facility is prepared) and needed to oversample to boost the ability to make predictions.  We tried random and SMOTE for oversampling, and SMOTEENN for combination sampling, though there was no appreciable difference in performance among the different methods. We varied predictors to find the optimum set which provided the highest predictive value.
-
+We ran into problems of convergence and needed to scale the data using the "tandardScaler from sklearn.preprocessing.  After scaling the the outcome variable we had to convert the data type from float to integer in order to run the model successfully.  We had a very small minority class (i.e. facility is prepared) and needed to oversample to boost the ability to make predictions.  We tried random and SMOTE for oversampling, and SMOTEENN for combination sampling, though there was no appreciable difference in performance among the different methods. We varied predictors to find the optimum set which provided the highest predictive value.  We calculated a balanced accuracy score using balanced_accuracy_score from sklearn.metrics.  We calculated an imbalanced classification matrix to show accuracy, precision, recall, and F1 scores for the minority and majority classes using classification_report_imbalanced from imblearn.metrics.
+ 
+  
 ## Final Results
 
 ![Final Results](final-results.jpg)
@@ -79,7 +80,7 @@ The best performing (and final) model included the following predicators: countr
 -Explore other ways of defining preparedness.  The facilities labeled as prepared were a small subset of the data (only ~ 5%).  Relaxing the standard for preparedness may make the model more robust at prediction by increasing the number of facilities deemed prepared.  Alternatively, an index was prepared from eleven variables associated with preparedness for infection control.  This continuous outcome variable could be modeled using linear regression.
 
 
-[Draft Model](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/COVID Readiness-LogReg_SMOTE.ipynb)
+[Draft Model](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/COVID_Readiness-LogReg_SMOTE.ipynb)
 
 # Project Management & Communications
 We have created a GitHub repository (COVID Readiness & Response) with branches for project management, database management,  dashboards and visualizations, and Analysis (machine learning).  We also have set up a project communication platform in Asana. 
