@@ -62,6 +62,22 @@ We ran into problems of convergence and needed to scale the data using the "tand
 ![Final Results](final-results.jpg)
 
 
+While the accuracy of the models is fairly good (0.74-0.80), the precision is poor for the minority class (0.12-0.15).  A similar pattern was true for recall and F1 scores whereby the value is good for the majority class (unprepared), and poor for the minority class (prepared).
+
+The best performing (and final) model included the following predicators: country, ownership, ftype, quality, inpatient, st_precautions, tbservice, and water_source.
+
+# Challenges
+-These models are not very good at predicting preparedness for infection control
+-Non-standard data across countries, particularly with regard to region and demographic data.  For example, in DRC the facility assessment data is distributed among 26 regions of the country whereas the demographic data is subdivided into 10 regions.  These data were not possible to merge adequately.  In Senegal, the demographic data was sub-divided into four regions, whereas the facility data was grouped into 10 regions.  
+-Lack of granularity in the cases and deaths data (and incongruence with regard to time). The COVID cases and deaths data is from 2020 whereas the facility data is from 2-3 years ago depending on the country.  It is not reasonable to believe that cases this would have had an effect on health facility preparedness from 2016-2018.  
+-Convergence. The models were unable to converge prior to scaling the data.  Oversampling also helped balance the model and improved performance.
+
+# Next Steps
+-Explore methods to better integrate the demographic data
+-More information on COVID cases and deaths will become available over time
+-Explore methods to better utilize the GPS data. For example, the distance of facilities to big cities could be calculated for all facilities for which latitude and longitude data are available.  Distance to population centers is likely predictive of preparedness for infection control. 
+-Explore other ways of defining preparedness.  The facilities labeled as prepared were a small subset of the data (only ~ 5%).  Relaxing the standard for preparedness may make the model more robust at prediction by increasing the number of facilities deemed prepared.  Alternatively, an index was prepared from eleven variables associated with preparedness for infection control.  This continuous outcome variable could be modeled using linear regression.
+
 
 [Draft Model](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/DraftModel.ipynb)
 
