@@ -35,7 +35,11 @@ The data are available in many formats (CSV, JSON, geoJSON, XML, to name a few),
 
 Data were downloaded from the DHS Project website in .CSV format.  The data from the facility assessment was recoded in Statistical Package for the Social Sciences (SPSS) Version 18 for Windows.  From the 1700+ variables in the datafile a subset of 30 relevant to the analysis was extracted, coded, merged with the GPS data and across countries before being  downloaded to .CSV.  It was then imported into PostreSQL.  Demographic data, also from the DHS Project, was downloaded for the four focal countries from the Statcompiler (https://www.statcompiler.com/en/).
 
+Covid-19 data was downloaded from WHO homepage in .csv foramt and combined into one datafile using SQL join
+
 [Sample data](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/sampleData.csv)
+[Data Exploration](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/master/data_explore.ipynb)
+[ERD](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/master/Resource/QuickDBD-Free%20Diagram%20(1).png)
 
 # Dashboard
 We used Tableau to create graphics (bar charts) to show differences between geographic areas for different predictors.  We used Flask to show a map of readiness for infection control within the country.
@@ -88,15 +92,7 @@ The best performing (and final) model included the following predicators: countr
 
 [Gradient Boosted Tree Model](COVID_Prepare_gradient_boosted_tree.ipynb)
 
-
-# Project Management & Communications
-We have created a GitHub repository (COVID Readiness & Response) with branches for project management, database management,  dashboards and visualizations, and Analysis (machine learning).  We also have set up a project communication platform in Asana. 
-
-# Roles 
-- Project Management : Hannah Rim 
-- Machine Learning : David Boone, Jueun Lee
-- Dashboard : Ramesh Azariah
-- Database : Jueun Lee, Shanice Brown 
+ 
 
 
 
