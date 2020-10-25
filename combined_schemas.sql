@@ -77,15 +77,18 @@ SELECT pr.FACIL,
     pr.FTYPE,
     pr.Factype2,	
     pr.ownership,
-    pr.water_source,	
-    pr.soapwater, 
-    pr.st_precautions,
-    ind.disinfectant,
-    ind.latexgloves,
-    ind.medicalmasks,
-    ind.gowns,
-    ind.eye_protect,
-    ind.preparedness	
+	ind.water_source,
+	ind.sterilization,
+	ind.equip_hld,
+	ind.guidelines_HLD,
+	ind.soapwater,
+	ind.disinfectant,
+	ind.st_precautions,
+	ind.latexgloves,
+	ind.medicalmasks,
+	ind.gowns,
+	ind.eye_protect,
+	ind.preparedness,	
     pr.TBservice,
     pr.HIVcare,
     pr.meetings,
@@ -100,8 +103,8 @@ INTO combined_full_data
 FROM combined_preparedness as pr
 INNER JOIN gps as gps
 ON (pr.FACIL = gps.FACIL)
-INNER JOIN indicators as ind
-ON (pr.FACIL = id.FACIL)
+INNER JOIN infection_indicators as ind
+ON (pr.FACIL = ind.FACIL)
 LEFT JOIN covid_cases_global as co
 ON (pr.Country = co.Country_code)
 WHERE (co.Date_reported = '10/11/2020');
