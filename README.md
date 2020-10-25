@@ -44,18 +44,18 @@ Covid-19 data was downloaded from WHO homepage in .csv foramt and combined into 
 # Dashboard
 Extracting data from the prepared .CSV files dashboards focusing on readiness and response of each country were prepared.  The data used from the four countries of interest: Democratic Republic of Congo, Senegal, Haiti, and Bangladesh helped to show the relationship between the countries with access to vital resources previously listed and their level of preparedness.  The example of Senegal which had the highest level of preparedness of the four, with a score of 75% was conclusive by number of facilities within the region with reliable sources of clean water, PPE, disinfectants, medical waste disposal, and established guidelines for infection control.
 
-![Facilities and Predicators](Deaths_and_Summary.jpg)
+![Facilities and Predicators](Deaths_Summary.jpg)
 
 A comparison of preparedness factors such as access to medical masks, latex gloves along with general preparedness demonstrated that certain countries, again Senegal for example, were more prepared than the other in this respect.  Different factors were measured on the average number of available data to determine the outcome.  Various approaches were used to establish other relationships.  For example, graphs of the average number of recorded cases and deaths per million per country gave the status.  Comparison graphs indicated which countries had the highest number of cases and deaths.
 
 Deeper analysis diving into preparedness at the regional level of each country was also included.  Maps of the country highlighted areas with a higher number of predictors. Some of the main predictors stated were visually organized on the map to give a general idea.  Comparisons of counties confirmed which ones had a higher control over preparedness.  
 Strangely in one case, Senegal, a higher level of control with the greatest percentage of prevention indicators, still resulted in a comparatively high number of cases and deaths.  It became obvious that there are other factors yet to be considered besides the obvious to conclude level of preparedness.
 
-![Senegal Preparedness and Deaths](4.Interactive_Senegal_Eval_Pop.jpg)
+![Senegal Preparedness and Deaths](Senegal_Eval.jpg)
 
 Nevertheless, the purpose of this study was to conclude whether countries and regions had a sense of infection control, general preparedness and access to critical items such as water and bedspace to handle an epidemic or even pandemic such as Covid-19.  Our initial use of green dots for prepared and red dots for not, provided the basic perspective to confirm our prediction.  Matched with data such as availability of TB testing services, HIV Care, access to a wide variety of medical staff refined the concept of preparedness and confirmed the overall benefit of having them to reduce the number of cases and deaths.
 
-![General Level of Preparedness](Analysis_Four_Countries.jpg)
+![General Level of Preparedness](Analysis_Countries.jpg)
 
 From the data our group so painstakingly gathered, cleaned, merged, and refined the prediction was clear: more associated positive predicators equal fewer cases and deaths.  The greater access to preparedness as a general idea, the more support can be provided to those regions who are lacking them.  
 
