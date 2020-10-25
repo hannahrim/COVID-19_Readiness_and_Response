@@ -39,7 +39,7 @@ Covid-19 data was downloaded from WHO homepage in .csv foramt and combined into 
 
 [Sample data](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/sampleData.csv)
 [Data Exploration](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/master/data_explore.ipynb)
-[ERD](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/master/Resource/QuickDBD-Free%20Diagram%20(1).png)
+![ERD](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/master/Resource/QuickDBD-Free_Diagram.png)
 
 # Dashboard
 We used Tableau to create graphics (bar charts) to show differences between geographic areas for different predictors.  We used Flask to show a map of readiness for infection control within the country.
