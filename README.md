@@ -43,7 +43,7 @@ Covid-19 data was downloaded from WHO homepage in .csv foramt
 4 dataset was uploaded topostreSQL and 3 data table was created using SQL join including combined data 
 ![ERD](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/master/Resource/QuickDBD-Free_Diagram.png)
 
-Primary data exploation 
+### Primary data exploation 
 
 ![Distribution of medical facility's preparedness for each country](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/Images/boxplot.PNG)
 
