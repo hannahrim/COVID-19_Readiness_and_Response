@@ -69,6 +69,8 @@ Nevertheless, the purpose of this study was to conclude whether countries and re
 
 From the data our group so painstakingly gathered, cleaned, merged, and refined the prediction was clear: more associated positive predicators equal fewer cases and deaths.  The greater access to preparedness as a general idea, the more support can be provided to those regions who are lacking them.  
 
+[Tableau url](https://us-west-2b.online.tableau.com/t/allcareplus/views/Region_Bangladesh/Dashboard1?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link)
+
 # Model (Data Analysis)
 We used a supervised machine learning classification model to classify health facilities and districts as either ready to provide health services safely (i.e. have adequate capacity for infection control and prevention), or not ready.  We used python with the sklearn, numpy, pandas, scipy modules to explore the accuracy, precision and recall of predictions from several approaches;  Logistic regression, Support Vector Models (SVM), Decision Trees, and Gradient Boosted Tree.  
 
