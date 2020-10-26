@@ -43,15 +43,13 @@ Covid-19 data was downloaded from WHO homepage in .csv foramt
 4 dataset was uploaded topostreSQL and 3 data table was created using SQL join including combined data 
 ![ERD](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/master/Resource/QuickDBD-Free_Diagram.png)
 
-![List of tables](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/Images/Capture.PNG)
-
 Primary data exploation 
 
 ![Distribution of medical facility's preparedness for each country](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/Images/boxplot.PNG)
 
-![Covid-19 cases per 100K population](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/Images/covidplot.PNG)
-
 ![Comparison of covid-19 cases and deaths for countries](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/Images/covid-num.PNG)
+
+![Covid-19 cases per 100K population](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/Images/covidplot.PNG)
 
 # Dashboard
 Extracting data from the prepared .CSV files dashboards focusing on readiness and response of each country were prepared.  The data used from the four countries of interest: Democratic Republic of Congo, Senegal, Haiti, and Bangladesh helped to show the relationship between the countries with access to vital resources previously listed and their level of preparedness.  The example of Senegal which had the highest level of preparedness of the four, with a score of 75% was conclusive by number of facilities within the region with reliable sources of clean water, PPE, disinfectants, medical waste disposal, and established guidelines for infection control.
