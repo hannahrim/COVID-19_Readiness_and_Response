@@ -31,15 +31,22 @@ We also linked the DHS to this data set which provided population-based estimate
 We started with data from one country, extended to multiple countries.  The countries selected have conducted a SPA and DHS surveys in the same year, or within a reasonably short time period.  Since SPA surveys are conducted far less often than DHS, we focused on countries having implemented the SPA recently (2016-2018).  Countries included in the analysis were Democratic Republic of the Congo (DRC), Senegal, Haiti, and Bangladesh.  
 
 # Data Management
-The data are available in many formats (CSV, JSON, geoJSON, XML, to name a few), and also via Application Program Interface (API).  We acquired the data and loaded it into a PostgreSQL database at Amazon RDS.
+The data are available in many formats (CSV, JSON, geoJSON, XML, to name a few), and also via Application Program Interface (API).  We acquired the data in .csv format and loaded it into a PostgreSQL database at Amazon RDS.
 
 Data were downloaded from the DHS Project website in .CSV format.  The data from the facility assessment was recoded in Statistical Package for the Social Sciences (SPSS) Version 18 for Windows.  From the 1700+ variables in the datafile a subset of 30 relevant to the analysis was extracted, coded, merged with the GPS data and across countries before being  downloaded to .CSV.  It was then imported into PostreSQL.  Demographic data, also from the DHS Project, was downloaded for the four focal countries from the Statcompiler (https://www.statcompiler.com/en/).
 
-Covid-19 data was downloaded from WHO homepage in .csv foramt and combined into one datafile using SQL join
+Covid-19 data was downloaded from WHO homepage in .csv foramt 
 
 [Sample data](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/sampleData.csv)
 [Data Exploration](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/master/data_explore.ipynb)
+4 dataset was uploaded topostreSQL and 3 data table was created using SQL join including combined data 
 ![ERD](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/master/Resource/QuickDBD-Free_Diagram.png)
+![List of tables](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/Images/Capture.PNG)
+
+Primary data exploation 
+![Distribution of medical facility's preparedness for each country](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/Images/boxplot.PNG)
+![Covid-19 cases per 100K population](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/Images/covidplot.PNG)
+![Comparison of covid-19 cases and deaths for countries](https://github.com/hannahrim/COVID-19_Readiness_and_Response/blob/Jueun-Lee/Images/covid-num.PNG)
 
 # Dashboard
 Extracting data from the prepared .CSV files dashboards focusing on readiness and response of each country were prepared.  The data used from the four countries of interest: Democratic Republic of Congo, Senegal, Haiti, and Bangladesh helped to show the relationship between the countries with access to vital resources previously listed and their level of preparedness.  The example of Senegal which had the highest level of preparedness of the four, with a score of 75% was conclusive by number of facilities within the region with reliable sources of clean water, PPE, disinfectants, medical waste disposal, and established guidelines for infection control.
